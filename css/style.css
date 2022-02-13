@@ -1,0 +1,77 @@
+*{
+    background-color: violet;
+}
+
+h1 {
+    text-align: center;
+    color: blueviolet;
+}
+.section {
+    display: inline-block;
+
+}
+.left {
+    float: left;
+    width: 300px;
+    height: 500px;
+    background: url(img/2.jpg);
+    background-size: 100%;
+    text-align: center;
+    margin-left: 150px;
+    box-shadow: 0 0 10px blue;
+}
+.right {
+    padding: 10px;
+    width: 500px;
+    height: 350px;
+    float: left;
+    margin-left: 300px;
+    margin-top: 60px;
+    font-size: 20px;
+    border: 2px dotted gray;
+    box-shadow: 0 0 10px white;
+    text-justify: auto;
+    color: blueviolet;
+}
+
+.heart {
+	width: 200px;
+	height: 200px;
+	top: 50%;
+	left: 46%;
+	z-index: 1;
+	display: block;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	animation: heart 1s ease infinite
+}
+
+@keyframes heart {
+	96% {
+		transform: translate(-50%,-50%) scale(.8,.8)
+	}
+	100% {
+		transform: translate(-50%,-50%) scale(1,1)
+	}
+}
+
+.heart div {
+	background: #ff0000;
+	width: 71px;
+	height: 126px;
+	top: 40px;
+	display: block;
+	position: absolute;
+	border-radius: 50%
+	}
+
+.timleft {
+	left: 45px;
+	transform: rotate(330deg);
+}
+
+.timright {
+	right: 45px;
+	transform: rotate(30deg);
+}
+
